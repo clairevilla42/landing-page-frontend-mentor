@@ -5,8 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Manage landing page</title>
 
@@ -28,21 +34,23 @@
   <header>
     <div class="content-wrapper">
       <div class="header-logo">
-        <img src="images/logo.svg" alt="Manage logo">
+      <img src="images/logo.svg" alt="Manage logo">
       </div>
-      <ul>
-        <li>Pricing</li>
-        <li>Product</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Community</li>
-      </ul>
+      <nav class="site-navigation">
+        <ul>
+          <li>Pricing</li>
+          <li>Product</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Community</li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <div class="hero">
-    <div class="content-wrapper">
-      <!-- three graphics -->
+    <div class="hero-image">
+      <img src="images/illustration-intro.svg" alt="graphs and charts">
     </div>
 
   </div> <!-- close hero section -->
@@ -54,6 +62,7 @@
       </p>
       <!-- button -->
     </div>
+    <button type="button" class="orange-button">Get Started</button>
   </div> <!-- close article -->
 
   <div class="features">
@@ -88,17 +97,29 @@
     <h2>What they've said</h2>
     <!-- review avatars, gallery -->
     <!-- review p -->
+    <button type="button" class="orange-button">Get Started</button>
   </div> <!-- close reviews -->
 
   <div class="cta">
+    <h2>Simplify how your team works today.</h2>
+    <button type="button" class="white-button">Get Started</button>
 
   </div> <!-- close cta -->
 
   <footer>
-    <!-- signup button -->
-    <!-- menu -->
-    <!-- social icons -->
-    <!-- logo -->
+    <div class="content-wrapper">
+      <img src="images/logo.svg" alt="Manage logo">
+      <ul>
+        <li>Pricing</li>
+        <li>Product</li>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Community</li>
+      </ul>
+      <!-- button -->
+      <!-- social icons -->
+      <!-- copyright -->
+    </div> <!-- close content wrapper -->
   </footer>
 
 
