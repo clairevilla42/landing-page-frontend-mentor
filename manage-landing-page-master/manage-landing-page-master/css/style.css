@@ -91,6 +91,8 @@
      body {
         font-size: 16px;
         font-family: 'Be Vietnam Pro', sans-serif;
+        width: 100%;
+        margin: auto;
      }
 
      h1, h2, h3 {
@@ -116,9 +118,7 @@
      /* header */
 
      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: inline-flex; 
         width: 90%;
      }
 
@@ -126,10 +126,13 @@
         margin: 20px 0 30px 10px;
         display: inline-block;
         width: 30%;
+        
      }
 
      header ul {
         list-style: none;
+        display: inline-flex;
+       
      }
 
      .site-navigation li {
@@ -140,7 +143,22 @@
      /* hero section */
 
      .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 30px;
+     }
 
+     .hero,
+     .summary p {
+      margin: 30px;
+      text-align: center;
+      width: 100%;
+     }
+
+     .hero p {
+      margin-bottom: 50px;
      }
 
      .orange-button {
@@ -149,15 +167,14 @@
         border: none;
         border-radius: 20px;
         padding: 20px 50px;
+        /* margin: 30px 0 0 0; */
+        margin: auto;
         min-height: 50px;
         min-width: 150px;
         justify-items: center;
         /* box-shadow: 0px 0px 10px 10px black; */
-        margin: auto;
         display: block;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
+        
      }
 
      .orange-button:hover {
@@ -165,11 +182,67 @@
         transition: 0.7s;
      }
 
+     /* summary */
+
+     .summary h1 {
+      margin-left: 35px;
+      margin-right: 35px;
+     }
+
+     .features h2, h3 {
+      text-align: center;
+     }
+
+     .features h3 {
+      background-color: hsl(13, 100%, 96%);
+     }
+
+     .features p {
+      width: 100%;
+      margin: 10px 15px 30px 25px;
+     }
+
+     /* reviews */
+
+     .reviews-wrapper {
+     /* display: flex;
+      justify-items: column;
+      align-items: center;
+      flex-wrap: wrap; */
+      background-color: hsl(13, 100%, 96%);
+     }
+
+     .reviews h2 {
+      width: 100%;
+      display: block;
+      background-color: white;
+      
+     }
+
+     .reviews img {
+      display: block;
+      margin: auto;
+     }
+
+     .reviews p {
+      width: 80%;
+      margin-left: 30px;
+     }
+
+     .each-review {
+      background-color:hsl(0, 0%, 98%);
+      text-align: center;
+      margin-bottom: 30px;
+     }
+
+
      /* call to action */
 
      .cta {
         background-color: hsl(12, 88%, 59%);
         color: white;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
      }
 
      .white-button {
